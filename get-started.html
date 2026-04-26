@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started - Elite Cost Segregation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <span>Welcome to Elite Cost Segregation</span>
+            <div>
+                <a href="mailto:info@elitecostseg.com">info@elitecostseg.com</a>
+                <a href="tel:+18332744484">833-274-4484</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Elite Cost Segregation</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="faqs.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="get-started.html" class="btn btn-primary">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero + Form Section -->
+    <section class="gs-hero">
+        <div class="container">
+            <div class="gs-hero-content">
+                <h1>Save on taxes with our no-cost feasibility analysis.</h1>
+                <p>We'll identify your potential tax savings and get back to you within 8 hours.</p>
+            </div>
+
+            <!-- Multi-step Form -->
+            <div class="gs-form-card">
+                <div class="gs-steps">
+                    <div class="gs-step active" data-step="1">
+                        <span class="gs-step-num">1</span>
+                        <span class="gs-step-label">Personal Information</span>
+                    </div>
+                    <div class="gs-step" data-step="2">
+                        <span class="gs-step-num">2</span>
+                        <span class="gs-step-label">Property Details</span>
+                    </div>
+                    <div class="gs-step" data-step="3">
+                        <span class="gs-step-num">3</span>
+                        <span class="gs-step-label">Review & Submit</span>
+                    </div>
+                </div>
+
+                <form id="gsForm" action="#" method="POST">
+                    <!-- Step 1 -->
+                    <div class="gs-form-step active" data-step="1">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="gs-first">First Name</label>
+                                <input type="text" id="gs-first" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="gs-last">Last Name</label>
+                                <input type="text" id="gs-last" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="gs-email">Email</label>
+                            <input type="email" id="gs-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gs-phone">Phone / Mobile</label>
+                            <input type="tel" id="gs-phone" name="phone">
+                        </div>
+                        <button type="button" class="btn btn-primary btn-submit" onclick="goStep(2)">Next</button>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="gs-form-step" data-step="2">
+                        <div class="form-group">
+                            <label for="gs-property">Property Type</label>
+                            <select id="gs-property" name="propertyType">
+                                <option value="">Select property type</option>
+                                <option>Commercial</option>
+                                <option>Residential Rental</option>
+                                <option>Mixed Use</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="gs-value">Estimated Property Value</label>
+                            <input type="text" id="gs-value" name="propertyValue" placeholder="$">
+                        </div>
+                        <div class="form-group">
+                            <label for="gs-year">Year Acquired</label>
+                            <input type="text" id="gs-year" name="yearAcquired" placeholder="e.g. 2022">
+                        </div>
+                        <div class="gs-btn-row">
+                            <button type="button" class="btn btn-outline" onclick="goStep(1)">Back</button>
+                            <button type="button" class="btn btn-primary" onclick="goStep(3)">Next</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="gs-form-step" data-step="3">
+                        <div class="form-group">
+                            <label for="gs-notes">Additional Notes</label>
+                            <textarea id="gs-notes" name="notes" rows="4" placeholder="Anything else we should know?"></textarea>
+                        </div>
+                        <div class="gs-btn-row">
+                            <button type="button" class="btn btn-outline" onclick="goStep(2)">Back</button>
+                            <button type="submit" class="btn btn-primary">Get My Free Analysis</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="gs-testimonials">
+        <div class="container">
+            <h2>Thousands of happy customers</h2>
+            <div class="gs-testimonial-grid">
+                <div class="gs-testimonial-card">
+                    <div class="gs-stars">★★★★★</div>
+                    <p>"The team was incredibly responsive and professional. They identified savings we never knew existed."</p>
+                    <span class="gs-author">— Sarah M.</span>
+                </div>
+                <div class="gs-testimonial-card">
+                    <div class="gs-stars">★★★★★</div>
+                    <p>"Fast turnaround and clear communication throughout the entire process. Highly recommend."</p>
+                    <span class="gs-author">— James R.</span>
+                </div>
+                <div class="gs-testimonial-card">
+                    <div class="gs-stars">★★★★★</div>
+                    <p>"We saved significantly more than expected. The feasibility analysis was thorough and easy to understand."</p>
+                    <span class="gs-author">— Linda K.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Elite Cost Segregation</h3>
+                    <p>Your creative partner for innovation and excellence. We turn ideas into reality.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="faqs.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Find Us</h4>
+                    <ul>
+                        <li>Mon - Fri: 9am - 6pm</li>
+                        <li>833-274-4484</li>
+                        <li>info@elitecostseg.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>Terms of Service</span>
+                <span>© 2026 Elite Cost Segregation. All rights reserved.</span>
+                <span>Privacy Policy</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function goStep(n) {
+            document.querySelectorAll('.gs-form-step').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.gs-step').forEach(s => {
+                s.classList.remove('active');
+                if (parseInt(s.dataset.step) <= n) s.classList.add('active');
+            });
+            document.querySelector('.gs-form-step[data-step="' + n + '"]').classList.add('active');
+        }
+    </script>
+</body>
+</html>
