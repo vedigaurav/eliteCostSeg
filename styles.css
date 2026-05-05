@@ -79,7 +79,7 @@ a {
 }
 
 .logo-img {
-    height: 50px;
+    height: 70px;
     width: auto;
 }
 
@@ -276,12 +276,12 @@ a {
 }
 
 .feature-card li {
-    color: var(--gray);
+    color: var(--dark);
     margin-bottom: 8px;
 }
 
 .feature-card p {
-    color: var(--gray);
+    color: var(--dark);
 }
 
 /* Benefits Section */
