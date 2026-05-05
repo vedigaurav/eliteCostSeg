@@ -78,6 +78,11 @@ a {
     color: var(--primary);
 }
 
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
