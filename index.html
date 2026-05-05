@@ -51,7 +51,14 @@
             
             <div class="feature-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">🚀</div>
+                    <div class="carousel">
+                        <img src="section1-pic1.jpg" alt="Cost Segregation 1" class="carousel-img active">
+                        <img src="section1-pic2.jpg" alt="Cost Segregation 2" class="carousel-img">
+                        <img src="section1-pic3.jpg" alt="Cost Segregation 3" class="carousel-img">
+                        <img src="section1-pic4.jpg" alt="Cost Segregation 4" class="carousel-img">
+                        <img src="section1-pic5.jpg" alt="Cost Segregation 5" class="carousel-img">
+                        <img src="section1-pic6.jpg" alt="Cost Segregation 6" class="carousel-img">
+                    </div>
                     <h3>Engineering-Based Cost Segregation Studies</h3>
                     <p>We deliver IRS-compliant, engineering-based cost segregation studies that identify and reclassify property components into shorter depreciation lives (5, 7, and 15 years).</p>
                     <p><strong>Our approach combines:</strong></p>
@@ -64,7 +71,14 @@
                 </div>
                 
                 <div class="feature-card">
-                    <div class="feature-icon">💡</div>
+                    <div class="carousel carousel-2">
+                        <img src="section2-pic1.jpg" alt="Tax Strategy 1" class="carousel-img active">
+                        <img src="section2-pic2.jpg" alt="Tax Strategy 2" class="carousel-img">
+                        <img src="section2-pic3.jpg" alt="Tax Strategy 3" class="carousel-img">
+                        <img src="section2-pic4.jpg" alt="Tax Strategy 4" class="carousel-img">
+                        <img src="section2-pic5.jpg" alt="Tax Strategy 5" class="carousel-img">
+                        <img src="section2-pic6.jpg" alt="Tax Strategy 6" class="carousel-img">
+                    </div>
                     <h3>Accelerated Depreciation & Tax Strategy Optimization</h3>
                     <p>We go beyond reports—we help you maximize tax savings through strategic depreciation planning.</p>
                     <p><strong>Our team evaluates:</strong></p>
@@ -77,7 +91,14 @@
                 </div>
                 
                 <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
+                    <div class="carousel">
+                        <img src="section3-pic1.jpg" alt="Audit-Ready 1" class="carousel-img active">
+                        <img src="section3-pic2.jpg" alt="Audit-Ready 2" class="carousel-img">
+                        <img src="section3-pic3.jpg" alt="Audit-Ready 3" class="carousel-img">
+                        <img src="section3-pic4.jpg" alt="Audit-Ready 4" class="carousel-img">
+                        <img src="section3-pic5.jpg" alt="Audit-Ready 5" class="carousel-img">
+                        <img src="section3-pic6.jpg" alt="Audit-Ready 6" class="carousel-img">
+                    </div>
                     <h3>Investor-Focused Analysis & Audit-Ready Deliverables</h3>
                     <p>We provide clear, investor-friendly insights along with fully documented, audit-ready reports.</p>
                     <p><strong>You receive:</strong></p>
@@ -180,5 +201,16 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.querySelectorAll('.carousel').forEach(carousel => {
+            const imgs = carousel.querySelectorAll('.carousel-img');
+            let current = 0;
+            setInterval(() => {
+                imgs[current].classList.remove('active');
+                current = (current + 1) % imgs.length;
+                imgs[current].classList.add('active');
+            }, 2000);
+        });
+    </script>
 </body>
 </html>
