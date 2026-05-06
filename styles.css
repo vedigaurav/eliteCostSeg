@@ -618,6 +618,19 @@ a {
     margin: 0 auto;
 }
 
+.faq-group-title {
+    max-width: 800px;
+    margin: 40px auto 15px;
+    font-size: 1.4rem;
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 8px;
+}
+
+.faq-group-title:first-of-type {
+    margin-top: 0;
+}
+
 .faq-item {
     background: var(--white);
     border-radius: 10px;
